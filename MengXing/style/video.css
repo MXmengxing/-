@@ -1,0 +1,90 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 视频导航栏样式 */
+.video-nav {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px; /* 最大宽度 */
+    padding: 20px;
+    text-align: center;
+}
+
+.video-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* 使内容在小屏幕上能换行 */
+}
+
+.video-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* 容器固定宽度 */
+    height: 120px; /* 容器固定高度 */
+    margin: 10px; /* 增加间距 */
+    background-color: transparent; /* 取消容器背景色 */
+    border-radius: 8px; /* 圆角边框 */
+    overflow: hidden; /* 确保图片不超出容器边界 */
+    position: relative; /* 为伪元素定位 */
+    transition: transform 0.3s, border 0.3s; /* 添加平滑过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.video-nav li:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大容器 */
+    border: 2px solid rgba(0, 0, 0, 0.3); /* 鼠标悬停时显示边框 */
+}
+
+.video-nav a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.video-nav img {
+    width: 100%; /* 图片宽度填满容器 */
+    height: auto; /* 高度自动保持比例 */
+    max-height: 100%; /* 最大高度为容器高度 */
+    object-fit: contain; /* 保持图片比例 */
+    transition: transform 0.3s; /* 添加过渡效果 */
+}
+
+/* 鼠标悬停时的图片效果 */
+.video-nav li:hover img {
+    transform: scale(1.05); /* 鼠标悬停时略微放大图片 */
+}
+
+.video-nav span {
+    font-size: 14px; /* 文字大小 */
+    font-weight: bold;
+    margin-top: 5px;
+    color: #555; /* 改善文字颜色对比度 */
+}
+
+/* 媒体查询：小屏幕适配 */
+@media (max-width: 768px) {
+    .video-nav ul {
+        flex-direction: column; /* 垂直排列导航项 */
+        align-items: center; /* 居中对齐 */
+    }
+
+    .video-nav li {
+        width: 100px; /* 调整小屏幕上的宽度 */
+        height: 100px; /* 调整小屏幕上的高度 */
+    }
+}

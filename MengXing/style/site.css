@@ -1,0 +1,99 @@
+/* 全局样式 */
+* {
+    box-sizing: border-box; /* 确保 padding 和 border 不影响宽度 */
+    font-family: Arial, sans-serif; /* 使用 Arial 字体 */
+    margin: 0; /* 重置默认边距 */
+    padding: 0; /* 重置默认内边距 */
+}
+
+/* 背景颜色和文字颜色 */
+body {
+    background-color: #f4f4f4; /* 背景色 */
+    color: #333; /* 文字颜色 */
+    text-align: center; /* 中心对齐文字 */
+}
+
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: space-between; /* 确保 logo 和菜单分开 */
+    align-items: center;
+    padding: 10px; /* 调整内边距 */
+    background-color: #fff; /* 背景色 */
+    border-bottom: 1px solid #ddd; /* 底部边框 */
+}
+
+/* Logo 样式 */
+.logo {
+    display: flex; /* 确保 Logo 和间距排列 */
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Logo 宽度缩小 */
+    height: auto; /* 保持高度自动 */
+    margin-right: -10px; /* Logo 间距 */
+}
+
+/* 菜单样式 */
+.menu {
+    margin: 5px auto; /* 调整菜单的外边距 */
+    padding: 5px;
+    border: 2px solid rgb(255, 196, 0); /* 边框颜色缩小 */
+    text-align: center;
+    border-radius: 15px; /* 圆角边框缩小 */
+    background-color: #fff; /* 菜单背景色 */
+    display: inline-block; /* 确保菜单宽度适应内容 */
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none; /* 去掉列表符号 */
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 0 12px; /* 菜单项的内边距稍微调整 */
+}
+
+.menu ul li a {
+    color: #ff0000; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    font-weight: bold; /* 加粗字体 */
+    font-size: 24px; /* 增加字体大小 */
+    transition: color 0.3s, text-decoration 0.3s; /* 平滑过渡效果 */
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 230, 0); /* 悬停时的文字颜色 */
+    text-decoration: underline; /* 悬停时下划线 */
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* 在小屏幕上垂直排列头部内容 */
+    }
+
+    .logo img {
+        width: 40px; /* 小屏幕上调整 Logo 尺寸 */
+    }
+
+    .menu {
+        width: auto; /* 菜单宽度自适应 */
+        padding: 5px; /* 减少内边距以适应小屏幕 */
+    }
+
+    .menu ul {
+        flex-direction: column; /* 菜单项垂直排列 */
+    }
+
+    .menu ul li {
+        padding: 5px 0; /* 垂直排列的内边距 */
+    }
+
+    .menu ul li a {
+        font-size: 20px; /* 在小屏幕上略微调整字体大小 */
+    }
+}

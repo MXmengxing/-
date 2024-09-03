@@ -1,0 +1,128 @@
+/* 全局样式 */
+body.support-page {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* 主内容区 */
+.main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 引言部分 */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 支持选项 */
+.donate-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.donate-option {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 280px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.donate-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.donate-option img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.donate-option h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.donate-option p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #0056b3;
+}
+
+/* 感谢信息部分 */
+.thank-you {
+    text-align: center;
+}
+
+.thank-you h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.thank-you p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* 底部样式 */
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .social-media a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.footer .social-media a:hover {
+    text-decoration: underline;
+}
