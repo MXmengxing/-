@@ -17,6 +17,7 @@
             <ul>
                 <li><a href="index.php">主页</a></li>
                 <li><a href="video.php">视频</a></li>
+                <li><a href="game.php">游戏</a></li>
                 <li><a href="about.php">简介</a></li>
                 <li><a href="donate.php">支持</a></li>
             </ul>
